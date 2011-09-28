@@ -29,9 +29,8 @@ int main(int argc, char *argv[])
 
 
 
-	 //QString locale = QLocale::system().name();
-	 QString locale = german.name();
-
+	 QString locale = QLocale::system().name();
+	 //QString locale = german.name();
 	 QString str_tran("hello_tr_" + locale);
 
 	 QString broj_sa_tackom("1234.56");
