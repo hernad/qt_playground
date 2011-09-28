@@ -1,11 +1,13 @@
-TEMLATE = lib
+TEMPLATE = lib
 
 TARGET = plugin_1
 
 #DESTDIR = plugins
 
-CONFIG += plugin release
+## http://doc.qt.nokia.com/latest/qmake-common-projects.html#building-a-library
 
-HEADERS = interface.h plugin_1.h
+CONFIG += plugin
+
+HEADERS = plugin_1.h
 SOURCES = plugin_1.cpp
 

@@ -1,7 +1,9 @@
 #include "plugin_1.h"
 
 #include <QObject>
+#include <QtCore>
 #include <QApplication>
+#include <QtGui>
 
 //MainWindow *glpMainWindow;
 
@@ -16,4 +18,4 @@ void Plugin1Imp::start( QApplication* a )
 }
  
 
-Q_EXPORT_PLUGIN2( Plugin1, Plugin1Imp )
+Q_EXPORT_PLUGIN2( plugin_1, Plugin1Imp )
