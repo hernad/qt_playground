@@ -15,4 +15,5 @@ CONFIG += qt debug
 # QT+=sql
 
 
-TRANSLATIONS = hello_tr_bs_BA.ts
+TRANSLATIONS = hello_tr_bs_BA.ts \
+               hello_tr_de_DE.ts
