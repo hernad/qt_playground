@@ -53,13 +53,36 @@ int main(int argc, char *argv[])
 	 qDebug() << german.toString(danas, QLocale::LongFormat);
 	 qDebug() << german.toString(danas, QLocale::ShortFormat);
 	
+	 qDebug() << german.dateFormat(QLocale::ShortFormat);
+	 qDebug() << german.dateFormat(QLocale::LongFormat);
+	 
 	 //qDebug() << "lokalno datum" << nas_datum << QDate::fromString(nas_datum, Qt::LocalDate);
 	 //qDebug() << "lokalno datum" << nas_datum << QDate::fromString(nas_datum, Qt::DefaultLocaleLongDate);
 
 	 QLocale::setDefault(QLocale::Bosnian);
      QLocale bosnian;
+
+	 if (bosnian.name() == "bs_BA") 
+	 {
+		 qDebug() << "bosna bosna ...";
+
+		 qDebug() << bosnian.dateFormat(QLocale::ShortFormat);
+		 qDebug() << bosnian.dateFormat(QLocale::LongFormat);
+	 
+	 }
+	 else
+		 qDebug() << "truba truba ...";
+
 	 qDebug() << bosnian.toString(danas, QLocale::LongFormat);
 	 qDebug() << bosnian.toString(danas, QLocale::ShortFormat);
+	
+
+	 QLocale::setDefault(QLocale::Croatian);
+     QLocale croat;
+	 qDebug() << "locale name" << croat.name();
+
+	 qDebug() << croat.toString(danas, QLocale::LongFormat);
+	 qDebug() << croat.toString(danas, QLocale::ShortFormat);
 	
 
 
